@@ -1,17 +1,9 @@
 # Sumo Bot — ESP32 / ESP-IDF
 
-An autonomous sumo robot built on the ESP32 using the ESP-IDF framework. The robot uses a ring-edge line detector, a directional IR sensor array, and dual BDC motors to compete in sumo matches — searching for opponents, attacking them, and evading the ring boundary — all driven by a priority-based FreeRTOS state machine.
+An autonomous sumo robot built on the ESP32 using the ESP-IDF framework. The robot uses a ring-edge line detector, a directional IR sensor array, and dual BDC motors to compete in sumo matches. The robots behaviours are driven by a priority-based FreeRTOS state machine. Behaviours include; searching for opponents, attacking them, and evading the ring boundary.
 
----
-
-## Features
-
-- **5-state autonomous state machine** with hardware-interrupt-driven priority overrides
-- **Directional IR opponent detection** across 9 compass directions
-- **Ring-edge line detection** via QRE1113 reflective sensors with ISR-driven response
-- **Dual BDC motor control** with PWM arc turns, hard pivots, and speed ramping via the ESP-IDF `bdc_motor` component
-- **Start sequence choreography** configurable as a timed action table
-- **Match start/stop control** via JSumo-compatible hardware start module
+I was the Electrical Engineer on the project, working on both firmware and electrical schematics. Thank you to the Rowan Thomas Allan Offer (Mech Eng), Damon Kotze (Mech Eng), and William Gillespie for helping put the project together. Below is the final robot and our team:
+<img width="3000" height="4000" alt="robowars_team" src="https://github.com/user-attachments/assets/ab62d61a-bf0b-41f1-95f0-75baf27c1043" />
 
 ---
 
@@ -29,7 +21,7 @@ An autonomous sumo robot built on the ESP32 using the ESP-IDF framework. The rob
 
 ## Schematic
 
-<!-- INSERT SCHEMATIC HERE -->
+<img width="760" height="997" alt="merrick_sumobot_schematic" src="https://github.com/user-attachments/assets/55c2fd2b-2917-4a7f-952c-094e560dfb0b" />
 
 &nbsp;
 
